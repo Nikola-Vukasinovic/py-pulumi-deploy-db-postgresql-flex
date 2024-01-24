@@ -1,0 +1,6 @@
+name: py-pulumi-deploy-db-postgresql-flex
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: Deploy PostgreSQL Azure Database - flexible server
