@@ -13,7 +13,7 @@ flexible_server = azure.postgresql.FlexibleServer("example-fs",
     version="12",
     administrator_login="psqladmin",
     administrator_password="H@Sh1CoR3!",
-    zone="2",
+    zone="3",
     storage_mb=32768,
     sku_name="B_Standard_B1ms",
 )
