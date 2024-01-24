@@ -1,7 +1,12 @@
 """An Azure RM Python Pulumi program"""
 
 import pulumi
+from pulumi import Config
 import pulumi_azure as azure
+
+# Retrieve Azure configuration with Pulumi config or use defaults
+config = Config()
+location = config.get("location") or "West Europe"
 
 # Create an Azure Resource Group
 example_resource_group = azure.core.ResourceGroup("example-resource-group", location="West Europe")
